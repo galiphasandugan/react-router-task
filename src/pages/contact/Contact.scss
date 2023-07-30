@@ -1,6 +1,9 @@
 //*****************************************************
 //*   CONTACT PAGE
 //*****************************************************
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
 
 .contact-bgImg-container{
     @include bgImg(100vh, $main-bgImg-path);

@@ -2,6 +2,10 @@
 //*   HOME PAGE
 //*****************************************************
 
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+
 .home-bgImg-container{
     @include bgImg(100vh, $main-bgImg-path);
  }

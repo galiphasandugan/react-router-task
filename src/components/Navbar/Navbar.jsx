@@ -1,22 +1,33 @@
 import React from 'react'
 import "./Navbar.scss"
+import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a>
+            <NavLink to="/" class="nav__link" 
+            style={({isActive})=>{
+              return {color: isActive ? "#ff652f" :"inherit" }
+            }} >Home</NavLink>
           </li>
           <li class="nav__item">
-            <a href="about.html" class="nav__link nav__link--active"
-              >About Me</a
-            >
+            <NavLink  to="/about" class="nav__link nav"
+            style={({isActive})=>{
+              return {color: isActive ? "#ff652f" :"inherit" }
+            }} >About Me</NavLink>
           </li>
           <li class="nav__item">
-            <a href="projects.html" class="nav__link">My Projects</a>
+            <NavLink to="/projects" class="nav__link"
+            style={({isActive})=>{
+              return {color: isActive ? "#ff652f" :"inherit" }
+            }} >My Projects</NavLink>
           </li>
           <li class="nav__item">
-            <a href="contact.html" class="nav__link">Contact</a>
+            <NavLink to="/contact" class="nav__link"
+            style={({isActive})=>{
+              return {color: isActive ? "#ff652f" :"inherit" }
+            }} >Contact</NavLink>
           </li>
         </ul>
       </nav>

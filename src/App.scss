@@ -1,6 +1,6 @@
-@import "./scss/reset";
+@import "./scss/reset.scss";
 
-@import "./scss/mixins", "./scss/variables";
+@import "./scss/mixins.scss", "./scss/variables.scss";
 
 @import "./pages/about/About.scss", "./pages/contact/Contact.scss", "./pages/home/Home.scss", "./pages/projects/Projects.scss";
 

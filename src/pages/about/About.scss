@@ -1,23 +1,14 @@
-//*****************************************************
-//*   ABOUT PAGE
-//*****************************************************
 @import '../../scss/variables';
 @import '../../scss/mixins';
 
-
 .about-bgImg-container{
-    
     display: flex;
     flex-direction: column;
-   
-
-
     .about__bio-image{
         text-align: center;
-
         h2{
             font-size: 3rem;
-            color: $secondary-color;
+            color: $secondary-color;  
         }
 
         p{
@@ -30,6 +21,9 @@
 }
 
 .about{
+    background-color: $primary-color;
+    height: 90vh;
+
     &__container{
         // border: 2px solid red;
         width: 70vw;
